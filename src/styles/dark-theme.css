@@ -1,0 +1,66 @@
+:root {
+    --background-color: black;
+    --text-color: white;
+}
+
+.dark-theme .calculator-grid {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+    border-radius: 30px;
+    box-shadow:
+        rgba(0, 0, 0, 0.3) 0px 70px 33px,
+        rgba(0, 0, 0, 0.42) 0px 35px 45px;
+}
+
+.dark-theme .calculator-grid > button {
+    cursor: pointer;
+    font-size: 2rem;
+    outline: none;
+    border: 1px solid #5d5d5d;
+    color: white;
+    font-weight: 500;
+}
+
+.dark-theme .calculator-grid > button:hover {
+    cursor: pointer;
+    font-size: 2rem;
+    outline: none;
+    border: 1px solid #5d5d5d;
+}
+.dark-theme .calculator-grid > .operation-btn {
+    background-color: rgb(51, 52, 56);
+    font-size: 3rem;
+}
+
+.dark-theme .calculator-grid > .operation-btn:nth-last-child(1) {
+    border-bottom-right-radius: 20px;
+}
+
+.dark-theme .calculator-grid > .operation-btn:hover {
+    background-color: rgb(255, 159, 10, 0.8);
+    font-size: 3rem;
+}
+.dark-theme .calculator-grid > .theme {
+    background: linear-gradient(to top, #ef1989, #fc4c40);
+}
+.dark-theme .calculator-grid > .theme:hover {
+    background: linear-gradient(to top, #ef1989, #fc4c40);
+    opacity: 0.8;
+}
+
+.dark-theme .calculator-grid > .numbers {
+    background-color: rgb(40, 41, 46);
+}
+.dark-theme .calculator-grid > .numbers:hover {
+    background-color: rgb(125, 125, 125, 0.95);
+}
+
+.dark-theme .calculator-grid > .operands {
+    background-color: rgb(100, 100, 100, 1);
+}
+.dark-theme .calculator-grid > .operands:hover {
+    background-color: rgb(100, 100, 100, 0.9);
+}

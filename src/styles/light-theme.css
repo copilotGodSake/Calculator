@@ -1,0 +1,78 @@
+:root {
+    --background-color: white;
+    --text-color: black;
+}
+
+body.light-theme {
+    --background-color: white;
+    --text-color: black;
+}
+
+.light-theme .calculator-grid {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+    border-radius: 30px;
+
+    box-shadow:
+        rgba(0, 0, 0, 0.3) 0px 70px 33px,
+        rgba(0, 0, 0, 0.42) 0px 35px 45px;
+}
+
+.light-theme .calculator-grid > button {
+    cursor: pointer;
+    font-size: 2rem;
+    outline: none;
+    /* border: 1px solid #5d5d5d; */
+    color: black;
+    font-weight: 500;
+}
+
+.light-theme .calculator-grid > button:hover {
+    cursor: pointer;
+    font-size: 2rem;
+    outline: none;
+    /* border: 1px solid #5d5d5d; */
+}
+.light-theme .calculator-grid > .operation-btn {
+    background-color: rgb(183, 183, 183);
+    font-size: 3rem;
+}
+
+.light-theme .calculator-grid > .operation-btn:nth-last-child(1) {
+    border-bottom-right-radius: 20px;
+}
+
+.light-theme .calculator-grid > .operation-btn:hover {
+    background-color: rgb(170, 170, 205);
+    font-size: 3rem;
+}
+.light-theme .calculator-grid > .theme {
+    background: linear-gradient(to top, #ef1989, #fc4c40);
+    color: white;
+}
+.light-theme .calculator-grid > .theme:hover {
+    background: linear-gradient(to top, #ef1989, #fc4c40);
+    opacity: 0.8;
+}
+
+.light-theme .calculator-grid > .numbers {
+    background-color: rgb(245, 245, 245);
+}
+.calculator-grid > .numbers:hover {
+    background-color: rgb(205, 205, 205, 0.95);
+}
+
+.light-theme .calculator-grid > .operands {
+    background-color: rgb(233, 233, 233);
+}
+.light-theme .calculator-grid > .operands:hover {
+    background-color: rgb(170, 170, 205);
+}
+
+.light-theme .calculator-grid > .output {
+    color: black;
+    background-color: rgb(205, 205, 205);
+}

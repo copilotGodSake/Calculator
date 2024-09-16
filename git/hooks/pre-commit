@@ -1,0 +1,19 @@
+exec 1>&2
+
+# Get the list of staged JavaScript files.
+eslint_staged_files=$(git diff --cached --name-only --diff-filter=ACM | grep '\.js$')
+
+# Check if there are any JavaScript files to lint.
+if [ -n "$eslint_staged_files" ]; then
+  echo "Running ESLint on staged files..."
+  # Run ESLint on the staged files.
+  npx eslint $eslint_staged_files
+
+  # Check the ESLint exit code.
+  if [ $? -ne 0 ]; then
+    echo "ESLint found errors. Please fix them before committing."
+    exit 1
+  fi
+fi
+
+exit 0

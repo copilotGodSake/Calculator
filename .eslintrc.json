@@ -1,0 +1,28 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true,
+        "node": true
+    },
+    "extends": ["eslint:recommended", "plugin:prettier/recommended"],
+    "parserOptions": {
+        "ecmaVersion": 12,
+        "sourceType": "module"
+    },
+    "plugins": ["prettier"],
+    "rules": {
+        "prettier/prettier": "error",
+        "no-unused-vars": [
+            "error",
+            {
+                "varsIgnorePattern": "^__unused_webpack_module|__webpack_exports__|__webpack_require__$"
+            }
+        ],
+        "no-undef": ["error", { "typeof": true }]
+    },
+    "globals": {
+        "__dirname": "readonly",
+        "require": "readonly",
+        "module": "readonly"
+    }
+}
