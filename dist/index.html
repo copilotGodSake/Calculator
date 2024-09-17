@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Calculator</title>
-    <script defer src="bundle.b463a962444090e615f9.js"></script></head>
+    <script defer src="bundle.7f9f12a844464d038113.js"></script></head>
     <body>
         <div class="container">
             <div class="theme-container">
@@ -43,5 +43,24 @@
                 <button class="operation-btn equal" data-value="=">=</button>
             </div>
         </div>
+        <script type="module">
+            // Import the functions you need from the SDKs you need
+            import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.13.1/firebase-app.js';
+            // TODO: Add SDKs for Firebase products that you want to use
+            // https://firebase.google.com/docs/web/setup#available-libraries
+
+            // Your web app's Firebase configuration
+            const firebaseConfig = {
+                apiKey: 'AIzaSyDhUpSUuABprH5Et6GUIb0avbFMCtN_gkY',
+                authDomain: 'calculator-b842a.firebaseapp.com',
+                projectId: 'calculator-b842a',
+                storageBucket: 'calculator-b842a.appspot.com',
+                messagingSenderId: '795610186388',
+                appId: '1:795610186388:web:5b2499ef922c77cd322a81',
+            };
+
+            // Initialize Firebase
+            const app = initializeApp(firebaseConfig);
+        </script>
     </body>
 </html>
