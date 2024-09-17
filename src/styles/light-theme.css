@@ -15,7 +15,6 @@ body.light-theme {
     grid-template-columns: repeat(4, 100px);
     grid-template-rows: minmax(120px, auto) repeat(5, 100px);
     border-radius: 30px;
-
     box-shadow:
         rgba(0, 0, 0, 0.3) 0px 70px 33px,
         rgba(0, 0, 0, 0.42) 0px 35px 45px;

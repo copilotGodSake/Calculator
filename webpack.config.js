@@ -36,7 +36,7 @@ module.exports = {
         }),
         new ESLintPlugin({
             extensions: ['js'],
-            overrideConfigFile: path.resolve(__dirname, '.eslintrc.json'), // Point to the ESLint config file
+            overrideConfigFile: path.resolve(__dirname, '.eslintrc.json'),
             emitWarning: true,
         }),
     ],
